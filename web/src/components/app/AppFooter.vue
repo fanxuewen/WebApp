@@ -1,14 +1,11 @@
 <template>
   <footer class="app-footer">
      <div class="app-link">
-      <router-link  to="home"><span class="base-icon home-icon"></span><span >首页</span></router-link >
+       <router-link   to="home"><span class="base-icon home-icon"></span><span >首页</span></router-link >
        <router-link  to="member"><span class="base-icon member-icon"></span><span >会员</span></router-link >
        <router-link  to="cart"><span class="base-icon cart-icon"></span><span>购物车</span></router-link >
        <router-link  to="search"><span class="base-icon search-icon"></span><span>搜索</span></router-link >
-   
-     </div>
-      
-
+    </div>
   </footer>
  </template>
 
@@ -26,7 +23,6 @@ export default {
 
 <style scoped>
 .app-footer{
-
   position:fixed;
   bottom: 0;
   width: 100%;
@@ -35,7 +31,7 @@ export default {
   background: #eee;
 }
 div.app-link {
-
+ 
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -57,22 +53,25 @@ a{
 
 }
 .home-icon{
-    background-image: url('../assets/img/home.png')
+    background-image: url('../../assets/img/home.png')
 
 }
 .member-icon{
-    background-image: url('../assets/img/member.png')
+    background-image: url('../../assets/img/member.png')
 
 }
 .cart-icon{
-    background-image: url('../assets/img/cart.png')
+    background-image: url('../../assets/img/cart.png')
 
 }
 .search-icon{
-    background-image: url('../assets/img/search.png')
+    background-image: url('../../assets/img/search.png')
 
 }
-.router-link-active{
+span{
+    color: black;
+}
+a.router-link-active span{
     color: rgba(51, 133, 255, 1);
 }
 
