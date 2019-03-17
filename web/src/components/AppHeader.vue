@@ -1,9 +1,8 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-   
+  <div class="header">
+     {{msg}}
   </div>
-</template>
+ </template>
 
 <script>
 export default {
@@ -14,20 +13,17 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.header{
+  background: rgba(51, 133, 255, 1);
+  text-align: center;
+  padding: 8px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: '宋体';
+  font-weight: bold;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 }
 </style>
