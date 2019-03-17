@@ -1,13 +1,13 @@
 <template>
   <footer class="app-footer">
-   <ul>
-       <li><span class="base-icon home-icon"></span><a href="javascript:void(0)">首页</a></li>
-       <li><span class="base-icon member-icon"></span><a href="javascript:void(0)">会员</a></li>
-       <li><span class="base-icon cart-icon"></span><a href="javascript:void(0)">购物车</a></li>
-       <li><span class="base-icon search-icon"></span><a href="javascript:void(0)">搜索</a></li>
-   </ul>
-
-
+     <div class="app-link">
+      <router-link  to="home"><span class="base-icon home-icon"></span><span >首页</span></router-link >
+       <router-link  to="member"><span class="base-icon member-icon"></span><span >会员</span></router-link >
+       <router-link  to="cart"><span class="base-icon cart-icon"></span><span>购物车</span></router-link >
+       <router-link  to="search"><span class="base-icon search-icon"></span><span>搜索</span></router-link >
+   
+     </div>
+      
 
   </footer>
  </template>
@@ -27,32 +27,26 @@ export default {
 <style scoped>
 .app-footer{
 
- position:fixed;
+  position:fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
-  height: 64px;
+  height: 60px;
   background: #eee;
 }
-.app-footer ul {
+div.app-link {
 
     display:flex;
     align-items: center;
     justify-content: space-around;
 }
-li{
-  
-   list-style: none;
-   text-align: center;
+a{
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-}
-
-a{
-    text-decoration: none;
-    padding-top: 8px;
+   text-decoration: none;
+    padding-top: 4px;
 }
 .base-icon{
     background-position: center;
@@ -78,6 +72,8 @@ a{
     background-image: url('../assets/img/search.png')
 
 }
-
+.router-link-active{
+    color: rgba(51, 133, 255, 1);
+}
 
 </style>
