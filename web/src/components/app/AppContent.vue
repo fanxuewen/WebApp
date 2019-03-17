@@ -1,12 +1,16 @@
 <template>
   <div class="app-content">
-  1234
-  </div>
+   <home-container></home-container>
+  </div> 
  </template>
 
 <script>
+import HomeContainer from '../home/HomeContainer.vue'
 export default {
   name: 'AppContent',
+  components:{
+  HomeContainer
+  }
   
 }
 </script>
