@@ -19,6 +19,6 @@ export default {
 <style scoped>
 .app-content{
   padding-top: 36px;
-  border: 1px solid yellowgreen;
+  
 }
 </style>

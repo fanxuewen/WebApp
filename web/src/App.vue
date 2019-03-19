@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    
-   <app-header msg="购物网站"></app-header>
+   <app-header msg="手机购物网站"></app-header>
    <app-content></app-content>
    <app-footer></app-footer>
   </div>

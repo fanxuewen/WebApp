@@ -1,28 +1,49 @@
 <template>
   <div>
     <mt-swipe :auto="4000">
-      <mt-swipe-item>1</mt-swipe-item>
-      <mt-swipe-item>2</mt-swipe-item>
-      <mt-swipe-item>3</mt-swipe-item>
+      <mt-swipe-item v-for="item in headers" :key="item.id">
+        <img :src="item.src">
+      </mt-swipe-item>
     </mt-swipe>
   </div>
 </template>
 
 
 <script>
-export default {};
+import axios from "axios";
+
+export default {
+  data() {
+    return {
+      headers: []
+    };
+  },
+  created() {
+    this.getHeaderData();
+  },
+  methods: {
+    getHeaderData() {
+      var that = this;
+      axios
+        .get("api/header")
+        .then(function(response) {
+          that.headers = response.data.result;
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    }
+  }
+};
 </script>
 <style scoped lang="scss">
-.mint-swipe{
+.mint-swipe {
   height: 200px;
-  .mint-swipe-item:nth-child(1){
-   background-color: red;
-  }
-  .mint-swipe-item:nth-child(2){
-   background-color: blue;
-  }
-  .mint-swipe-item:nth-child(3){
-   background-color: green;
+  .mint-swipe-item{
+    img{
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 </style>
