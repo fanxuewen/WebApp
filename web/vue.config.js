@@ -45,7 +45,7 @@ module.exports = {
             '^/api': ''
           }
         }
-      }, // 设置代理
+      }, 
      before: app => {}
     }
    }

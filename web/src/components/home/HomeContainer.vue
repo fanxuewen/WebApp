@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div>
     <mt-swipe :auto="4000">
@@ -5,18 +6,23 @@
         <img :src="item.src">
       </mt-swipe-item>
     </mt-swipe>
+    <function-details></function-details>
   </div>
 </template>
 
 
 <script>
 import axios from "axios";
+import FunctionDetails from "./FunctionDetails.vue"
 
 export default {
   data() {
     return {
       headers: []
     };
+  },
+  components:{
+    FunctionDetails
   },
   created() {
     this.getHeaderData();
@@ -30,7 +36,8 @@ export default {
           that.headers = response.data.result;
         })
         .catch(function(error) {
-          console.log(error);
+
+           console.log(error);
         });
     }
   }
