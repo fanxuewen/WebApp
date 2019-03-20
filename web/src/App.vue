@@ -1,21 +1,24 @@
 <template>
-  <div id="app">
-   <div class="header">
-     简易手机购物网站
-  </div>
-    <div class="app-content">
-     <transition>
-           <router-view></router-view>
-     </transition>
-    </div> 
-    <footer class="app-footer">
-     <div class="app-link">
-       <router-link  to="home"><span class="base-icon home-icon"></span><span >首页</span></router-link >
-       <router-link  to="member"><span class="base-icon member-icon"></span><span >会员</span></router-link >
-       <router-link  to="cart"><span class="base-icon cart-icon"></span><span>购物车</span></router-link >
-       <router-link  to="search"><span class="base-icon search-icon"></span><span>搜索</span></router-link >
+ <div id="app">
+    <!-- 头部 -->
+    <div class="header">
+     简易手机网站
     </div>
-  </footer>
+     <!-- 正文 -->
+    <div class="app-content">
+      <transition>
+           <router-view></router-view>
+      </transition>
+    </div> 
+     <!-- 底部导航 -->
+    <footer class="app-footer">
+      <div class="app-link">
+       <router-link  to="/home"><span class="base-icon home-icon"></span><span >首页</span></router-link >
+       <router-link  to="/member"><span class="base-icon member-icon"></span><span >会员</span></router-link >
+       <router-link  to="/cart"><span class="base-icon cart-icon"></span><span>购物车</span></router-link >
+       <router-link  to="/search"><span class="base-icon search-icon"></span><span>搜索</span></router-link >
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -33,23 +36,21 @@ export default {
  }
  body{
    font-size: 16px;
-   font-family:Arial, Helvetica, sans-serif;
+   font-family:'宋体', Helvetica, sans-serif;
  }
  .header{
   background: rgba(51, 133, 255, 1); 
-  /* background: rgba(255, 81, 80, 0.8); */
   text-align: center;
   padding: 8px;
   color: white;
   font-size: 1.2rem;
-  font-family: '宋体';
   font-weight: bold;
   position: fixed;
   z-index: 9999;
   width: 100%;
 }
  .app-content{
-  padding-top: 36px;
+  padding: 37px 0 54px 0;
   overflow-x: hidden;
   
 }
