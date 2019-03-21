@@ -10,8 +10,8 @@
    <div class="nav">
     <div class="row">
       <router-link  class="box" to="/home/news">
-        <span class="base-icon fruit-icon"></span>
-        <span class="content">水果</span>
+        <span class="base-icon news-icon"></span>
+        <span class="content">新闻</span>
       </router-link >
       <a class="box">
         <span class="base-icon vagetables-icon"></span>
@@ -98,8 +98,8 @@ export default {
         border-radius: 50%;
         background-color: blue;
       }
-      .fruit-icon{
-           background: url("../../assets/img/fruit.png") no-repeat 8px;
+      .news-icon{
+           background: url("../../assets/img/news.png") no-repeat 8px;
            background-color: rgba(5, 236, 36, 0.8);
       }
       .vagetables-icon{

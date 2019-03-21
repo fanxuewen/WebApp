@@ -38,6 +38,9 @@ export default {
    font-size: 16px;
    font-family:'宋体', Helvetica, sans-serif;
  }
+ .ql-align-justify+h4{
+   margin-bottom: 0.8rem !important;
+ }
  .header{
   background: rgba(51, 133, 255, 1); 
   text-align: center;

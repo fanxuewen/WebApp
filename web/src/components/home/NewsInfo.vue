@@ -51,7 +51,7 @@ export default {
     justify-content: space-between;
     border-bottom: 1px solid #dbdbdb;
     span {
-      padding: 0.8rem 1.2rem;
+      padding: 0.8rem 0.4rem;
       font-size: 0.8rem;
       color: rgba(51, 133, 255, 1);
     }
