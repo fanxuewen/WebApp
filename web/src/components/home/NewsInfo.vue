@@ -6,10 +6,12 @@
       <span>点击次数:{{article.clickTimes}}</span>
     </div>
     <div class="content" v-html="article.content"></div>
+    <user-comment :id="id"></user-comment>
   </div>
 </template>
 <script>
 import axios from "axios";
+import UserComment from './../commom/UserComment.vue'
 export default {
   name: "newsinfo",
   data() {
@@ -37,6 +39,9 @@ export default {
           console.log(error);
         });
     }
+  },
+  components:{
+    UserComment
   }
 };
 </script>

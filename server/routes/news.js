@@ -6,7 +6,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function (req, res, next) {
   let id = req.query.id;
-  console.log(path.resolve(__dirname, "../data/news.json"));
+  
   let news = fs.readFileSync(path.resolve(__dirname, "../data/news.json"), "utf8");
 
   if (id) {
