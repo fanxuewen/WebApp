@@ -1,6 +1,7 @@
 import Router from 'vue-router';
 import Home   from './components/home/HomeContainer.vue'
 import NewsList from './components/home/NewsList.vue'
+import NewsInfo from './components/home/NewsInfo.vue'
 
 import Member from './components/member/MemberContainer.vue'
 import Cart   from './components/cart/CartContainer.vue'
@@ -14,7 +15,7 @@ routes:[
     {path:'/member',component:Member},
     {path:'/cart',component:Cart},
     {path:'/search',component:Search},
- 
+    {path:'/home/newsinfo/:id',component:NewsInfo},
    ]
 
 });

@@ -50,7 +50,7 @@ export default {
   width: 100%;
 }
  .app-content{
-  padding: 37px 0 54px 0;
+  padding: 37px 0 60px 0;
   overflow-x: hidden;
   
 }
