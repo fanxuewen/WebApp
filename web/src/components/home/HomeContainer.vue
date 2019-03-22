@@ -11,12 +11,12 @@
     <div class="row">
       <router-link  class="box" to="/home/news">
         <span class="base-icon news-icon"></span>
-        <span class="content">新闻</span>
+        <span class="content">新闻咨询</span>
       </router-link >
-      <a class="box">
-        <span class="base-icon vagetables-icon"></span>
-        <span class="content">蔬菜</span>
-      </a>
+      <router-link class="box" to="/home/pictures">
+        <span class="base-icon pictures-icon"></span>
+        <span class="content">图片分享</span>
+      </router-link>
       <a class="box">
         <span class="base-icon snacks-icon"></span>
         <span class="content">零食</span>
@@ -102,8 +102,8 @@ export default {
            background: url("../../assets/img/news.png") no-repeat 8px;
            background-color: rgba(5, 236, 36, 0.8);
       }
-      .vagetables-icon{
-           background: url("../../assets/img/vagetables.png") no-repeat 8px;
+      .pictures-icon{
+           background: url("../../assets/img/pictures.png") no-repeat 8px;
             background-color: rgba(5, 97, 236, 0.925);
       }
       .snacks-icon{

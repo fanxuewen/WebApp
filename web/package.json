@@ -9,9 +9,12 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "iscroll": "^5.2.0",
     "mint-ui": "^2.2.13",
     "moment": "^2.24.0",
     "vue": "^2.6.6",
+    "vue-iscroll-view": "^1.0.3",
     "vue-router": "^3.0.2"
   },
   "devDependencies": {
@@ -35,7 +38,8 @@
       "eslint:recommended"
     ],
     "rules": {
-      "no-console": "off"
+      "no-console": "off",
+      "strict": "off"
     },
     "parserOptions": {
       "parser": "babel-eslint"

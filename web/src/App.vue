@@ -29,14 +29,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
  *{
    margin: 0;
    padding: 0;
  }
+
  body{
    font-size: 16px;
    font-family:'宋体', Helvetica, sans-serif;
+ }
+  a{
+     text-decoration: none;
  }
  .ql-align-justify+h4{
    margin-bottom: 0.8rem !important;
@@ -83,15 +87,16 @@ div.app-link {
     display:flex;
     align-items: center;
     justify-content: space-around;
-}
-a{
+    a{
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   text-decoration: none;
+ 
     padding-top: 4px;
 }
+}
+
 .base-icon{
     background-position: center;
     background-repeat: no-repeat;
