@@ -17,12 +17,17 @@
         <span class="base-icon pictures-icon"></span>
         <span class="content">图片分享</span>
       </router-link>
-      <a class="box">
+       <router-link class="box" to="/home/phones">
+        <span class="base-icon phone-icon"></span>
+        <span class="content">数码产品</span>
+      </router-link>
+     
+    </div>
+    <div class="row">
+       <a class="box">
         <span class="base-icon snacks-icon"></span>
         <span class="content">零食</span>
       </a>
-    </div>
-    <div class="row">
       <a class="box">
         <span class="base-icon shoes-icon"></span>
         <span class="content">鞋类</span>
@@ -31,10 +36,7 @@
         <span class="base-icon ball-icon"></span>
         <span class="content">球类</span>
       </a>
-      <a class="box">
-        <span class="base-icon phone-icon"></span>
-        <span class="content">手机</span>
-      </a>
+     
     </div>
   </div>
   </div>

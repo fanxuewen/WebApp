@@ -3,96 +3,110 @@
         {
             "typeId": 1,
             "pictures": [
-                
-                {
+                {   
+                    "typeId": 1,
                     "id": 1,
-                    "title": "科技改变生活",
-                    "imgUrl": "http://pic210.nipic.com/pic/20190315/12061423_090555131000_4.jpg",
-                    "brife": "科技好阿科技棒啊科技呱呱叫阿"
-                },
-                {
-                    "id": 2,
                     "title": "5G时代",
-                    "imgUrl": "http://pic209.nipic.com/pic/20190308/12061423_135340145000_4.jpg",
+                    "imgUrl": "https://f12.baidu.com/it/u=3836373573,3935579308&fm=72",
                     "brife": "5G好阿5G棒啊5G呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
+                    "id": 2,
+                    "title": "科技改变生活",
+                    "imgUrl": "https://f12.baidu.com/it/u=3205249464,353158756&fm=72",
+                    "brife": "科技好阿科技棒啊科技呱呱叫阿"
+                },
+                {   
+                    "typeId": 1,
                     "id": 3,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic206.nipic.com/pic/20190221/24206642_173835603036_4.jpg",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1547020572,169356634&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
 
                 {
+                    "typeId": 1,
                     "id": 4,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic205.nipic.com/pic/20190213/27737901_212958597000_4.jpg",
+                    "imgUrl": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1074857387,2019909344&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 5,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic208.nipic.com/pic/20190305/25280063_184759227000_4.jpg",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3524584963,2247704905&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 6,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic208.nipic.com/pic/20190224/13597469_085735754000_4.jpg",
+                    "imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3203755009,669449006&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 7,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic210.nipic.com/pic/20190315/23771846_191432426000_4.jpg",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2774922349,3670644699&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
-                },
-                {
+                },  
+                {   
+                    "typeId": 1,
                     "id": 8,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic210.nipic.com/pic/20190315/23771846_191440488000_4.jpg",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2648028529,3056965615&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 9,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic208.nipic.com/pic/20190227/26760728_150033793000_4.jpg",
+                    "imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=144558031,3783815708&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 10,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic210.nipic.com/pic/20190315/23771846_191420965000_4.jpg",
+                    "imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=342461775,3315639533&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 11,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic209.nipic.com/pic/20190311/1656471_152540703087_4.jpg",
+                    "imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2976473095,1316389177&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 12,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic202.nipic.com/pic/20190110/12061423_091447399000_4.jpg",
+                    "imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=240004071,4169228718&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 13,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic207.nipic.com/pic/20190224/13597469_090037109000_4.jpg",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2953562157,4026051539&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 14,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic207.nipic.com/pic/20190224/13597469_090133718000_4.jpg",
+                    "imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3693150945,1367585424&fm=200&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 1,
                     "id": 15,
                     "title": "科技改变生活",
-                    "imgUrl": "http://pic113.huitu.com/pic/20181212/1522627_20181212204642117060_0.jpg",
+                    "imgUrl": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3209522229,2077797717&fm=26&gp=0.jpg",
                     "brife": "科技好阿科技棒啊科技呱呱叫阿"
                 }
                
@@ -103,52 +117,60 @@
         {
             "typeId": 2,
              "pictures": [
-                {
+                {   
+                    "typeId": 2,
                     "id": 1,
                     "title": "美女改变生活",
-                    "imgUrl": "http://pic182.nipic.com/pic/20180915/3337749_184642128000_4.jpg",
+                    "imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1816180534,3378144977&fm=26&gp=0.jpg",
                     "brife": "美女好阿美女棒啊美女呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 2,
                     "id": 2,
                     "title": "美女改变生活",
-                    "imgUrl": "http://pic196.nipic.com/pic/20181211/218707_054442273032_4.jpg",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3229845804,3621776192&fm=26&gp=0.jpg",
                     "brife": "美女好阿美女棒啊美女呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 2,
                     "id": 3,
                     "title": "美女改变生活",
-                    "imgUrl": "http://pic196.nipic.com/pic/20181211/218707_045746194031_4.jpg",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3234659285,236012653&fm=26&gp=0.jpg",
                     "brife": "美女好阿美女棒啊美女呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 2,
                     "id": 4,
                     "title": "美女改变生活",
-                    "imgUrl": "http://pic197.nipic.com/pic/20181218/218707_153613846088_4.jpg",
+                    "imgUrl": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3187303444,2119094683&fm=26&gp=0.jpg",
                     "brife": "美女好阿美女棒啊美女呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 2,
                     "id": 5,
                     "title": "美女改变生活",
-                    "imgUrl": "http://pic209.nipic.com/pic/20190312/9468980_104351507000_4.jpg",
+                    "imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2905738183,2965304076&fm=26&gp=0.jpg",
                     "brife": "美女好阿美女棒啊美女呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 2,
                     "id": 6,
                     "title": "美女改变生活",
-                    "imgUrl": "http://pic209.nipic.com/pic/20190312/9468980_104422510000_4.jpg",
+                    "imgUrl": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3487396999,3286710374&fm=26&gp=0.jpg",
                     "brife": "美女好阿美女棒啊美女呱呱叫阿"
                 },
-                {
+                {   
+                    "typeId": 2,
                     "id": 7,
                     "title": "美女改变生活",
-                    "imgUrl": "http://pic112.huitu.com/pic/20181209/56500_20181209183738688070_0.jpg",
+                    "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1784337210,4163464906&fm=26&gp=0.jpg",
                     "brife": "美女好阿美女棒啊美女呱呱叫阿"
                 },
-                {
+                {  
+                    "typeId": 2,
                     "id": 8,
                     "title": "美女改变生活",
-                    "imgUrl": "http://pic201.nipic.com/pic/20190103/2301489_193058420000_4.jpg",
+                    "imgUrl": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3586190782,3628066869&fm=26&gp=0.jpg",
                     "brife": "美女好阿美女棒啊美女呱呱叫阿"
                 }
              ]

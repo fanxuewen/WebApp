@@ -10,15 +10,15 @@
         @click="getPictursById(item.id)"
       >{{item.title}}</a>
     </div>
-
+    <!-- 图片列表 -->
     <ul class="picture-list">
-      <li v-for="item in list" :key="item.imgUrl" class="pictur-item">
+      <router-link v-for="item in list" :key="item.imgUrl" class="pictur-item" tag="li" :to="'/home/pictureinfo/'+item.typeId+'/'+item.id">
         <img v-lazy="item.imgUrl">
         <div class="info">
             <h4 class="info-title">{{item.title}}</h4>
             <div class="info-body">{{item.brife}}</div>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
@@ -32,7 +32,8 @@ export default {
     return {
       pictures: [{ id: 0, title: "全部" }],
       selectedId: 0,
-      list: []
+      list: [],
+     
     };
   },
   created() {
@@ -63,7 +64,7 @@ export default {
           }
         })
         .then(function(response) {
-          that.list = response.data.reverse();
+          that.list = response.data;
         })
         .catch(function(error) {
           console.log(error);

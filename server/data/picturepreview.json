@@ -1,0 +1,34 @@
+{
+    "result": [
+        {
+            "typeid": 1,
+            "images": [
+                {
+                    "src": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2491563104,1693799136&fm=11&gp=0.jpg",
+                    "w": 600,
+                    "h": 600
+                },
+                {
+                    "src": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3245500864,2765745580&fm=26&gp=0.jpg",
+                    "w": 600,
+                    "h": 600
+                },
+                {
+                    "src": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=694932984,3422738070&fm=11&gp=0.jpg",
+                    "w": 600,
+                    "h": 600
+                },
+                {
+                    "src": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2874499399,4152846107&fm=26&gp=0.jpg",
+                    "w": 600,
+                    "h": 600
+                },
+                {
+                    "src": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2874499399,4152846107&fm=26&gp=0.jpg",
+                    "w": 600,
+                    "h": 600
+                }
+            ]
+        }
+    ]
+}

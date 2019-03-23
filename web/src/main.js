@@ -3,6 +3,9 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import MintUI from 'mint-ui';
 import moment from 'moment'
+import VuePreview from 'vue2-preview'
+
+Vue.use(VuePreview)
 Vue.use(MintUI);
 Vue.use(VueRouter);
 Vue.config.productionTip = false
