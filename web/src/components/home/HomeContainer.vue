@@ -1,12 +1,14 @@
 /* eslint-disable */
 <template>
   <div>
-    <mt-swipe :auto="4000">
+    <!-- <mt-swipe :auto="4000">
       <mt-swipe-item v-for="item in headers" :key="item.id">
         <img :src="item.src">
       </mt-swipe-item>
-    </mt-swipe>
-  
+    </mt-swipe> -->
+    <swiper :list="headers" :isFull="true"></swiper>
+
+
    <div class="nav">
     <div class="row">
       <router-link  class="box" to="/home/news">
@@ -42,17 +44,18 @@
   </div>
 </template>
 
-
 <script>
 import axios from "axios";
-
+import swiper from '../commom/swiper.vue'
 export default {
   data() {
     return {
       headers: []
     };
   },
- 
+  components:{
+   swiper
+  },
   created() {
     this.getHeaderData();
   },
@@ -73,15 +76,7 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.mint-swipe {
-  height: 200px;
-  .mint-swipe-item{
-    img{
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
+
 .nav {
   background-color: rgba(255, 81, 80, 0.8);
   .row {

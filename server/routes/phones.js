@@ -13,6 +13,22 @@ router.get('/',function(req,res,next){
    
     res.send(JSON.stringify(data));
    });
-})
+});
+router.get('/details',function(req,res,next){
+   let id=parseInt(req.query.id) ;
+   let result={};
+   readFilePromise(path.resolve(__dirname, "../data/phonedetail.json"),'utf8').then(function(data){
+      
+    data=JSON.parse(data).result;
+    for(let i=0;i<data.length;i++){
+      if(data[i].id==id){
+         result=data[i];
+       
+         break;
+      }
+    }
+    res.send(JSON.stringify(result));
+   });
+});
 
 module.exports = router;
