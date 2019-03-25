@@ -1,13 +1,20 @@
 <template>
   <div>
-     search
+  <in-building></in-building>
     
   </div>
 </template>
 
 
 <script>
-export default {};
+import InBuilding from '../commom/InBuilding.vue'
+ export default{
+ 
+ components:{
+   InBuilding
+ }
+ }
+</script>
 </script>
 <style scoped>
 </style>

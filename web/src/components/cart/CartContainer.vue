@@ -1,13 +1,19 @@
 <template>
   <div>
-      cart
+      <in-building></in-building>
     
   </div>
 </template>
 
 
 <script>
-export default {};
+import InBuilding from '../commom/InBuilding.vue'
+ export default{
+ 
+ components:{
+   InBuilding
+ }
+ }
 </script>
 <style scoped>
 </style>

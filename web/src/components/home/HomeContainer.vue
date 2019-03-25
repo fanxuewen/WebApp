@@ -13,7 +13,7 @@
     <div class="row">
       <router-link  class="box" to="/home/news">
         <span class="base-icon news-icon"></span>
-        <span class="content">新闻咨询</span>
+        <span class="content">新闻资讯</span>
       </router-link >
       <router-link class="box" to="/home/pictures">
         <span class="base-icon pictures-icon"></span>

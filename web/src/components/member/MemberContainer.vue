@@ -1,17 +1,18 @@
 <template>
   <div>
  
-    <counter-box max="10" ></counter-box>
+   <in-building></in-building>
   </div>
 </template>
 
 
 <script>
-import CounterBox from '../commom/CounterBox.vue'
+
+import InBuilding from '../commom/InBuilding.vue'
  export default{
  
  components:{
-   CounterBox
+   InBuilding
  }
  }
 </script>

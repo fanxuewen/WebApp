@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import MintUI from 'mint-ui';
+import MintUI from 'mint-ui'
 import moment from 'moment'
 import VuePreview from 'vue2-preview'
+// import Vuex from 'vuex'
+import store from './store'
+// Vue.use(Vuex);
 
 Vue.use(VuePreview)
 Vue.use(MintUI);
@@ -20,5 +23,6 @@ import '../node_modules/mint-ui/lib/swipe/style.css'
 new Vue({
   el:'#app',
   render: h => h(App),
-  router
+  router,
+  store
 })

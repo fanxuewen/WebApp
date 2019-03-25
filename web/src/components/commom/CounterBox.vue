@@ -2,7 +2,7 @@
 
       <span class="counter-box">
        <button :class="['btn',{'disable':decEnable}]" @click="decrease" :disabled="decEnable">-</button>
-       <input type="text" class="num" :value="currentNum">
+       <input type="text" class="num" :value="currentNum" @change="setCount" ref="nums">
        <button :class="['btn',{disable:addEnable}]" @click="increase" :disabled="addEnable">+</button>
     </span>
  
@@ -25,6 +25,7 @@ methods:{
       return;
     }
    this.currentNum=this.currentNum+1;
+     this.$emit('getcount', this.currentNum);
    if( this.currentNum>=this.max){
       this.addEnable=true;
       
@@ -33,22 +34,17 @@ methods:{
   decrease(){
     
     this.currentNum=this.currentNum-1;
+      this.$emit('getcount',this.currentNum);
     if(this.currentNum<=0){
            this.decEnable=true;
            
       }
   },
-  inputValue(e){
-   let target =e.target||e.srcElement;
-   let value =Number(target.value);
- 
-   if(Number.isNaN(value)){
-       this.currentNum=0;
-       target.value='';
-       return false;
-   }
-   console.log(value);
-   console.log(typeof value);
+  setCount(e){
+  
+    
+   this.$emit('getcount',parseInt(this.$refs.nums.value));
+   
   }
   
 }

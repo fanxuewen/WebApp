@@ -1,6 +1,7 @@
 <template>
  <div id="app">
     <!-- 头部 -->
+    <span class="back" @click="goBack" v-show="flag">&lt;返回</span>
     <div class="header">
      简易手机网站
     </div>
@@ -15,7 +16,7 @@
       <div class="app-link">
        <router-link  to="/home"><span class="base-icon home-icon"></span><span >首页</span></router-link >
        <router-link  to="/member"><span class="base-icon member-icon"></span><span >会员</span></router-link >
-       <router-link  to="/cart"><span class="base-icon cart-icon"></span><span>购物车</span></router-link >
+       <router-link  to="/cart"><span class="base-icon cart-icon"><label id="cartnums">{{$store.getters.getAllCount}}</label></span><span>购物车</span></router-link >
        <router-link  to="/search"><span class="base-icon search-icon"></span><span>搜索</span></router-link >
       </div>
     </footer>
@@ -24,7 +25,28 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data(){
+    return{
+      flag:false
+    }
+  },
+  methods:{
+
+    goBack(){
+      this.$router.go(-1);
+    }
+  },
+  watch:{
+    '$route.path':function(newVal){
+      
+      if(newVal=='/home'){
+        this.flag=false;
+      }else{
+        this.flag=true;
+      }
+    }
+  }
   
 }
 </script>
@@ -45,6 +67,15 @@ export default {
  .ql-align-justify+h4{
    margin-bottom: 0.8rem !important;
  }
+ .back{
+   color: white;
+    position: absolute;
+    top: .5rem;
+    left: 2rem;
+    z-index: 999;
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
  .header{
   background: rgba(51, 133, 255, 1); 
   text-align: center;
@@ -53,7 +84,7 @@ export default {
   font-size: 1.2rem;
   font-weight: bold;
   position: fixed;
-  z-index: 9999;
+  z-index: 99;
   width: 100%;
 }
  .app-content{
@@ -114,7 +145,8 @@ div.app-link {
 
 }
 .cart-icon{
-    background-image: url('./assets/img/cart.png')
+    background-image: url('./assets/img/cart.png');
+    
 
 }
 .search-icon{
@@ -123,6 +155,17 @@ div.app-link {
 }
 span{
     color: black;
+    label{
+      border: 1px solid;
+    margin-left: 1.2rem;
+    
+    border-radius: 50%;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: #e41010;
+    color: white;
+    }
 }
 a.router-link-active span{
     color: rgba(51, 133, 255, 1);

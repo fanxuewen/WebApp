@@ -8,11 +8,11 @@
       <div class="body">
         <p>
           销售价：
-          <span class="now">￥3099</span>市场价:
-          <span class="market">￥3099</span>
+          <span class="now">￥{{details.now}}</span>市场价:
+          <span class="market">￥{{details.old}}</span>
         </p>
         <span class="purchase-num">购买数量:</span>
-        <counter-box :max="details.quantity"></counter-box>
+        <counter-box :max="details.quantity" @getcount="getCount"></counter-box>
         <p class="footer">
           <button class="btn btn-rightnow">立即购买</button>
           <button class="btn btn-num" @click="addCart">加入购物车</button>
@@ -46,9 +46,9 @@
     </div>
     <!-- <transition v-on:before-enter="beforeEnter" v-on:enter="enter" @after-enter="afterEnter" >
          <div class="ball" v-show="flag"></div>
-    </transition>-->
+    </transition> -->
 
-    <div class="ball" id="ball"></div>
+    <div class="ball" id="ball" ref=ball></div>
   </div>
 </template>
 
@@ -64,13 +64,15 @@ export default {
       pictures: [],
       id: this.$route.params.id,
       details: {},
-      flag: false
+      flag: false,
+      count:1
     };
   },
   created() {
     this.getPhoneInfo();
     this.getPhoneDetails();
   },
+ 
   components: {
     swiper,
     CounterBox
@@ -92,6 +94,7 @@ export default {
           console.log(error);
         });
     },
+  
     getPhoneDetails() {
       let that = this;
       axios
@@ -101,41 +104,53 @@ export default {
           }
         })
         .then(function(response) {
-          console.log(response.data);
+        
           that.details = response.data;
         })
         .catch(function(error) {
           console.log(error);
         });
     },
+    getCount(count){
+      this.count=count;
+      
+    },
     addCart() {
-      this.flag = !this.flag;
-      let ball = document.getElementById("ball");
+    //  this.flag = !this.flag;
+     // let ball = document.getElementById("ball");
+     let  phoneifo={"id": this.id,"nums":this.count,"price":this.details.now,"selected":true};
+   
+     this.$store.commit("addToCart",phoneifo);
+     let ball=this.$refs.ball;
+     let cart = document.getElementById("cartnums").getBoundingClientRect();
+     let scroll=document.documentElement.scrollTop||document.body.scrollTop;
+    
       ball.style.display = "block";
       setTimeout(function() {
-        ball.style.left = "300px";
-        ball.style.top = "500px";
-        ball.style.display = "none";
-      }, 100);
-    },
-    beforeEnter(el) {
-      el.style.transform = "translate(0,0)";
-      el.style.display = "block";
-      el.style.visibility = "visible";
-    },
-    enter(el, done) {
-      el.offsetWidth;
-
-      el.style.zIndex = 99999;
-      el.style.transform = "translate(15rem,20rem)";
-      el.style.transition = "all 10s ease";
-      el.style.display = "block";
-      el.style.visibility = "visible";
-      done();
-    },
-    afterEnter(el) {
-      this.flag = !this.flag;
-    }
+        ball.style.left = cart.left+'px';
+        ball.style.top = (cart.top +scroll)+'px';   
+       }, 100);
+        setTimeout(function() {
+         ball.style.display = "none";
+        ball.style.left = "7.5rem";
+        ball.style.top = "21.2rem";   
+       }, 1200);
+     }
+     //,
+    // beforeEnter(el) {
+    //   el.style.transform = "translate(0,0)";
+     
+    // },
+    // enter(el, done) {
+    //   el.offsetWidth;
+    //   el.style.transform = "translate(15rem,20rem)";
+    //   el.style.transition = "all 10s ease";
+     
+    //   done();
+    // },
+    // afterEnter(el) {
+    //   this.flag = !this.flag;
+    // }
   }
 };
 </script>
@@ -222,15 +237,11 @@ export default {
     background: red;
     border-radius: 50%;
     left: 7.5rem;
-    top: 19rem;
-    z-index: 99999;
+    top: 21.2rem;
+    z-index: 999;
     display: none;
-    transition: all 10s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+     transition: all 1s ease-in;
   }
-  .ball-animate {
-    display: block;
-    transform: translate(15rem, 20rem);
-    transition: all 10s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  }
+
 }
 </style>
