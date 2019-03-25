@@ -24,5 +24,5 @@ web:CSS3+H5+Vue.js<br/>
 ### 3.新闻资讯
    ![home](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/news.gif)
 ### 4.数码产品
-   ![home](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/phones.gif)
+   ![home](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/phone.gif)
 
