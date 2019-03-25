@@ -14,7 +14,7 @@
         <span class="purchase-num">购买数量:</span>
         <counter-box :max="details.quantity"></counter-box>
         <p class="footer">
-          <button class="btn btn-rightnow" >立即购买</button>
+          <button class="btn btn-rightnow">立即购买</button>
           <button class="btn btn-num" @click="addCart">加入购物车</button>
         </p>
       </div>
@@ -44,11 +44,11 @@
         <button class="btn btn-outline-red">加载更多</button>
       </div>
     </div>
-   <!-- <transition v-on:before-enter="beforeEnter" v-on:enter="enter" @after-enter="afterEnter" >
+    <!-- <transition v-on:before-enter="beforeEnter" v-on:enter="enter" @after-enter="afterEnter" >
          <div class="ball" v-show="flag"></div>
-   </transition> -->
+    </transition>-->
 
-     <div class="ball" id="ball"></div>
+    <div class="ball" id="ball"></div>
   </div>
 </template>
 
@@ -64,7 +64,7 @@ export default {
       pictures: [],
       id: this.$route.params.id,
       details: {},
-      flag:false
+      flag: false
     };
   },
   created() {
@@ -108,34 +108,33 @@ export default {
           console.log(error);
         });
     },
-    addCart(){
-      this.flag=!this.flag;
-      let ball=   document.getElementById("ball");
-      ball.style.display="block";
-      setTimeout(function(){
-    
-           ball.style.left="300px";
-              ball.style.top="500px";  
-              ball.style.display="none"; 
-      },100)
+    addCart() {
+      this.flag = !this.flag;
+      let ball = document.getElementById("ball");
+      ball.style.display = "block";
+      setTimeout(function() {
+        ball.style.left = "300px";
+        ball.style.top = "500px";
+        ball.style.display = "none";
+      }, 100);
     },
-    beforeEnter(el){
-      el.style.transform="translate(0,0)";
-     el.style.display="block";
-     el.style.visibility="visible";
+    beforeEnter(el) {
+      el.style.transform = "translate(0,0)";
+      el.style.display = "block";
+      el.style.visibility = "visible";
     },
-    enter(el,done){
+    enter(el, done) {
       el.offsetWidth;
-      
-     el.style.zIndex=99999;
-      el.style.transform="translate(15rem,20rem)";
-      el.style.transition="all 10s ease";
-       el.style.display="block";
-     el.style.visibility="visible";
+
+      el.style.zIndex = 99999;
+      el.style.transform = "translate(15rem,20rem)";
+      el.style.transition = "all 10s ease";
+      el.style.display = "block";
+      el.style.visibility = "visible";
       done();
     },
-    afterEnter(el){
-      this.flag=!this.flag;
+    afterEnter(el) {
+      this.flag = !this.flag;
     }
   }
 };
@@ -144,7 +143,7 @@ export default {
 <style lang='scss' scoped>
 .container {
   padding: 2%;
- 
+
   .card {
     cursor: pointer;
     margin: 0.6rem auto;
@@ -216,22 +215,22 @@ export default {
       }
     }
   }
-  .ball{
+  .ball {
     width: 1rem;
     height: 1rem;
     position: absolute;
     background: red;
     border-radius: 50%;
-   left: 7.5rem;
+    left: 7.5rem;
     top: 19rem;
     z-index: 99999;
     display: none;
-    transition: all 10s cubic-bezier(.17,.67,.83,.67);
+    transition: all 10s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
-  .ball-animate{
+  .ball-animate {
     display: block;
-   transform: translate(15rem,20rem);
-   transition: all 10s cubic-bezier(.17,.67,.83,.67);
+    transform: translate(15rem, 20rem);
+    transition: all 10s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
 }
 </style>

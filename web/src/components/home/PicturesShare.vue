@@ -116,19 +116,21 @@ export default {
     width: 98%;
     box-shadow: 0 0 0.2rem #c5b9b9;
     position: relative;
+    
     .info{
         color: white;
         text-align: left;
         position: absolute;
-        bottom: 0;
+        bottom: 7px;
       
-        width: 100%;
-        background: rgba(213, 207, 207, 0.8);
+        width: 98%;
+        background: rgba(235, 225, 225, 0.6);
         .info-title{
-          margin-bottom: .5rem;
+          margin: .5rem 0;
         }
         .info-body{
               font-size: 0.8rem;
+              margin-bottom: .5rem;
         }
     }
    
