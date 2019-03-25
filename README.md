@@ -11,9 +11,9 @@ Node+express+Vue全家桶+axios+webpack
       npm install  安装依赖 
       npm run start 启动服务端 
 
-2. cd至webapp>web目录下 <br/>
-   npm install  安装依赖 <br/>
-   npm run serve 启动页面 <br/> 
+2. cd至webapp>web目录下
+   npm install  安装依赖 
+   npm run serve 启动页面 
 ## 页面效果
 ### 1.首页
    ![home](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/home.gif)
