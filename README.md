@@ -20,9 +20,9 @@ Node+express+Vue全家桶+axios+webpack
 ### 2.图片分享
       vue2-preview 插件实现图片预览 <br/> 
       mint-ui的lazyload 实现图片懒加载 <br/> 
-   ![home](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/pictures.gif)
+   ![shares](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/pictures.gif)
 ### 3.新闻资讯
-   ![home](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/news.gif)
+   ![news](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/news.gif)
 ### 4.数码产品
-   ![home](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/phone.gif)
+   ![phones](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/phone.gif)
 
