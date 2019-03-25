@@ -15,14 +15,5 @@ Node+express+Vue全家桶+axios+webpack
    npm install  安装依赖 
    npm run serve 启动页面 
 ## 页面效果
-### 1.首页
-   ![home](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/home.gif)
-### 2.图片分享
-      vue2-preview 插件实现图片预览 <br/> 
-      mint-ui的lazyload 实现图片懒加载 <br/> 
-   ![shares](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/pictures.gif)
-### 3.新闻资讯
-   ![news](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/news.gif)
-### 4.数码产品
-   ![phones](https://github.com/fanxuewen/WebApp/tree/master/web/src/assets/img/phone.gif)
+<a>https://juejin.im/post/5c985ab0518825328473fe56</a>
 
