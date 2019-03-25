@@ -44,11 +44,11 @@
         <button class="btn btn-outline-red">加载更多</button>
       </div>
     </div>
-   <transition v-on:before-enter="beforeEnter" v-on:enter="enter" @after-enter="afterEnter" >
+   <!-- <transition v-on:before-enter="beforeEnter" v-on:enter="enter" @after-enter="afterEnter" >
          <div class="ball" v-show="flag"></div>
-   </transition>
+   </transition> -->
 
-   
+     <div class="ball" id="ball"></div>
   </div>
 </template>
 
@@ -110,9 +110,17 @@ export default {
     },
     addCart(){
       this.flag=!this.flag;
+      let ball=   document.getElementById("ball");
+      ball.style.display="block";
+      setTimeout(function(){
+    
+           ball.style.left="300px";
+              ball.style.top="500px";  
+              ball.style.display="none"; 
+      },100)
     },
     beforeEnter(el){
-     // el.style.transform="translate(0,0)";
+      el.style.transform="translate(0,0)";
      el.style.display="block";
      el.style.visibility="visible";
     },
@@ -217,6 +225,13 @@ export default {
    left: 7.5rem;
     top: 19rem;
     z-index: 99999;
+    display: none;
+    transition: all 10s cubic-bezier(.17,.67,.83,.67);
+  }
+  .ball-animate{
+    display: block;
+   transform: translate(15rem,20rem);
+   transition: all 10s cubic-bezier(.17,.67,.83,.67);
   }
 }
 </style>
