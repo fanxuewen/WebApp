@@ -15,7 +15,7 @@ import InBuilding from '../commom/InBuilding.vue'
  }
  }
 </script>
-</script>
+
 <style scoped>
 </style>
 

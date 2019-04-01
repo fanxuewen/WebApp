@@ -31,10 +31,20 @@ export default {
       flag:false
     }
   },
+  created(){
+    this.init();
+  },
   methods:{
 
     goBack(){
       this.$router.go(-1);
+    },
+    init(){
+      if(this.$route.path=='/home'){
+        this.flag=false;
+      }else{
+        this.flag=true;
+      }
     }
   },
   watch:{

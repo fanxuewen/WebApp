@@ -31,4 +31,20 @@ router.get('/details',function(req,res,next){
    });
 });
 
+router.get('/carts',function(req,res,next){
+   let ids=req.query.ids.split(',') ;
+   console.log(ids);
+   let result=[];
+   readFilePromise(path.resolve(__dirname, "../data/carts.json"),'utf8').then(function(data){
+      
+    data=JSON.parse(data).result;
+    for(let i=0;i<data.length;i++){
+      if(ids.includes(data[i].id.toString())){
+         result.push(data[i]);
+      }
+    }
+    res.send(JSON.stringify(result));
+   });
+});
+
 module.exports = router;
