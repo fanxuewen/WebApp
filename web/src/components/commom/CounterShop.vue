@@ -10,10 +10,11 @@
 
 <script>
 export default {
-  props:["max"],
+  name:"countershop",
+  props:["max","current","goodsId"],
 data(){
   return {
-     currentNum:1,
+     currentNum:this.current,
     addEnable:false,
     decEnable:false
   }
@@ -24,29 +25,28 @@ methods:{
       this.addEnable=true;
        this.decEnable=false;
       return;
-    }else{
-       this.decEnable=false;
     }
+       this.decEnable=false;
+    
    this.currentNum=parseInt(this.currentNum) +1;
-     this.$emit('getcount', this.currentNum);
+     this.setCount();
    if( this.currentNum>=this.max){
       this.addEnable=true;
        this.decEnable=false;
     }
   },
   decrease(){
-    
     this.currentNum=parseInt(this.currentNum) -1;
-      this.$emit('getcount',this.currentNum);
+    this.setCount();
     if(this.currentNum<=0){
            this.decEnable=true;
            this.addEnable=false;
       }
   },
   setCount(){
-  
+  this.$store.commit("updateCart",{"id":this.goodsId,"nums":this.currentNum})
     
-   this.$emit('getcount',parseInt(this.$refs.nums.value));
+  
    
   }
   
