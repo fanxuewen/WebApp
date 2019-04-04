@@ -147,18 +147,9 @@ export default {
   }
   .empty {
     text-align: center;
-
-    margin: 10rem;
+     margin: 5rem;
     font-size: 1.5rem;
-    animation: empty 2s infinite ease-in alternate;
-    @keyframes empty {
-      from {
-        transform: rotate(0);
-      }
-      to {
-        transform: rotate(50deg);
-      }
-    }
+   
   }
 }
 </style>
